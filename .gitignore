@@ -1,2 +1,6 @@
 gocv-tf-image-classifier
+*.zip
+*.pb
+*.txt
 *.jpg
+*.webp
