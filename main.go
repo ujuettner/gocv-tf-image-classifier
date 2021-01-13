@@ -11,9 +11,9 @@ import (
 )
 
 func main() {
-	var modelFile *string = flag.StringP("model", "m", "", "TensorFlow model file")
-	var labelsFile *string = flag.StringP("labels", "l", "", "file containing the model's labels")
-	var imageFile *string = flag.StringP("image", "i", "", "image file")
+	modelFile := flag.StringP("model", "m", "", "TensorFlow model file")
+	labelsFile := flag.StringP("labels", "l", "", "file containing the model's labels")
+	imageFile := flag.StringP("image", "i", "", "image file")
 	flag.Parse()
 
 	// check for required flags
