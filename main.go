@@ -37,7 +37,6 @@ func main() {
 	}
 
 	imageDataArray := gocv.IMRead(*imageFile, gocv.IMReadColor)
-	defer imageDataArray.Close()
 	if imageDataArray.Empty() {
 		fmt.Printf("Error reading image file %v\n", *imageFile)
 		return
