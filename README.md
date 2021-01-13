@@ -10,4 +10,4 @@ A simple example using [GoCV](https://gocv.io/) (package docs are [here](https:/
 GoCV is a wrapper around [OpenCV](https://opencv.org/) using cgo. Therefore, installing GoCV means compiling a lot of C code and installing libraries. In order to avoid cluttering your local development environment, you can use a prepared Docker container:
 
 1. `docker pull gocv/opencv`
-2. `docker run --tty --interactive --volume "${PWD}":/src --name gocv-dev gocv/opencv bash`
+2. `docker run --tty --interactive --rm --volume "${PWD}":/src --name gocv-dev gocv/opencv bash`
